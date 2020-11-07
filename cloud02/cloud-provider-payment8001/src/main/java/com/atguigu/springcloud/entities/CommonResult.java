@@ -22,7 +22,7 @@ public class CommonResult<T> {
     private String message;
     private T      data;
 
-    public CommonResult(Integer code, String message){
+    public CommonResult(Integer code, String message){//空参构造方法
         this(code,message,null);
     }
 

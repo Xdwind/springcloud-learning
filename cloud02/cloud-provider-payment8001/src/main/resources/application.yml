@@ -13,7 +13,15 @@ spring:
     url: jdbc:mysql://localhost:3306/cloud?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
     username: root
     password: 123456
-
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.atguigu.springcloud.entities #所有实体别名类所在的包
+
+eureka:
+  client:
+    # 表示是否将自己注册进EurekaServer
+    register-with-eureka: true
+    # 是否从EurekaServer抓取已有的注册信息，默认为True
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka

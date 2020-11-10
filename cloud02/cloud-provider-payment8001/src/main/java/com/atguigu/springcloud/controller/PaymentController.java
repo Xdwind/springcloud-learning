@@ -13,6 +13,7 @@ import org.springframework.cloud.netflix.eureka.EurekaDiscoveryClient;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @Author Gao Biao
@@ -68,5 +69,16 @@ public class PaymentController {
         }
 
         return this.discoveryClient;
+    }
+
+    @GetMapping("/payment/feign/timeout")
+    public String paymentFeignTimeout(){
+        try {
+            // 暂停3秒钟
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return serverPort;
     }
 }

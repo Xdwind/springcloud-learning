@@ -1,0 +1,7 @@
+server:
+  port: 9001
+
+# dashboard报错原因：https://www.jianshu.com/p/0a682e4781b0
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "localhost"

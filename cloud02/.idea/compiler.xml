@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-config-center3344" />
+        <module name="cloudalibaba-config-nacos-client3377" />
         <module name="cloud-provider-payment8002" />
         <module name="cloud-config-client3355" />
         <module name="cloud-config-client3366" />
@@ -26,6 +27,7 @@
         <module name="cloudalibaba-consumer-nacos-order83" />
         <module name="cloud-consumer-order80" />
         <module name="cloud-provider-hystrix-payment8001" />
+        <module name="cloudalibaba-sentinel-service8401" />
         <module name="cloud-consumer-feign-order80" />
       </profile>
     </annotationProcessing>
